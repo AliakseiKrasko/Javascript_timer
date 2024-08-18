@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Таймер</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div id="timer-container">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <body>
+      <div id="timer-container">
         <h1>Таймер</h1>
-        <input type="number" id="time-input" placeholder="Введите время в секундах">
+        <input
+          type="number"
+          id="time-input"
+          placeholder="Введите время в секундах"
+        />
         <button id="start-button">Запуск</button>
         <button id="stop-button">Стоп</button>
         <button id="reset-button">Сброс</button>
         <div id="time-display">00:00</div>
-    </div>
+      </div>
+
+      <!-- Модальное окно -->
+      <div id="modal">
+        <div id="modal-content">
+          <h2>Время вышло!</h2>
+          <button id="modal-close">Закрыть</button>
+        </div>
+      </div>
+
+      <script src="script.js"></script>
+    </body>
 
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
